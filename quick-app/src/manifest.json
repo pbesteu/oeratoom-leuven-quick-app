@@ -1,6 +1,6 @@
 {
-    "package": "org.example.myquickapp",
-    "name": "City Street Heritage",
+    "package": "es.espinr.oeratoom",
+    "name": "Oeratoom Leuven",
     "versionName": "0.1",
     "versionCode": 1,
     "minPlatformVersion": 1078,

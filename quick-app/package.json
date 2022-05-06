@@ -1,8 +1,8 @@
 {
-  "name": "org.example.myquickapp",
+  "name": "es.espinr.oeartoom",
   "version": "0.0.1",
   "license": "MIT",
-  "repository": "https://github.com/espinr/local-cultural-heritage",
+  "repository": "https://github.com/espinr/oeratoom-leuven",
   "description": "Sample quick app for Cultural Heritage promotion",
   "scripts": {
     "fa-build": "node node_modules/webpack/bin/webpack.js --progress --config ./node_modules/fa-toolkit/webpack.config.js",
