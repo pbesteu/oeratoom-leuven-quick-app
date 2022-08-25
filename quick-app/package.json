@@ -2,7 +2,7 @@
   "name": "es.espinr.oeartoom",
   "version": "0.0.1",
   "license": "MIT",
-  "repository": "https://github.com/espinr/oeratoom-leuven",
+  "repository": "https://github.com/pbesteu/oeratoom-leuven-quick-app/",
   "description": "Sample quick app for Cultural Heritage promotion",
   "scripts": {
     "fa-build": "node node_modules/webpack/bin/webpack.js --progress --config ./node_modules/fa-toolkit/webpack.config.js",
@@ -12,6 +12,6 @@
   "devDependencies": {
     "geolib": "^3.3.3",
     "cross-env": "^7.0.2",
-    "fa-toolkit": "file:fa-toolkit-12.1.1-Stable.300.tgz"
+    "fa-toolkit": "file:fa-toolkit-12.5.1-Stable.301.tgz"
   }
 }

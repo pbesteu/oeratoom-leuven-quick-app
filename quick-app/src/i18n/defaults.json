@@ -88,11 +88,12 @@
             "repository": "More details of this project"
         },
         "today" : {
-            "intro": "Based your current position, you are:",
+            "intro": "Based your current position, you are",
             "after": "after the Big Bang",
+            "ring": "Go to Leuven, where all started",
             "billion": "{years} billion years",
             "million": "{years} million years",
-            "zero": "You are before the Big Bang",
+            "zero": "before the Big Bang",
             "walk": "Walk towards the Central Medallion to travel forwards to today (13.78 billion years after the Big Bang)."
         }
     }

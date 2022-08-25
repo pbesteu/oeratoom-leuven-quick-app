@@ -3,7 +3,7 @@
         "app_title": "Oeratoom Leuven",
         "version": 1,
         "updated": "2022-05-06",
-        "source_url": "https://espinr.github.io/oeratoom-leuven/oeratoom/data.json",
+        "source_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/data.json",
         "analytics_id": "1",
         "marketplace_url": ""
     },
@@ -14,12 +14,12 @@
                     "brand": "#37423C",
                     "complementary": "#F99B93"
                 },
-                "repository_url": "https://github.com/espinr/oeratoom-leuven/tree/main/docs/oeratoom/",
+                "repository_url": "https://github.com/pbesteu/oeratoom-leuven-quick-app/tree/main/docs/oeratoom/",
                 "text_info": "In Leuven, the universe is at your feet. Did you know that the big bang theory was written in Leuven? Professor Georges Lemaître launched this revolutionary theory about the Big Bang in 1931 at the University of Leuven. As a tribute, there is a new city artwork. It is called 'Oer Atom' and it transforms the inner city into a universe. Discover many interesting facts about the work of art and the universe while walking.",
                 "text_acknowledge": "This quick app is an open-source project powered by open data from the City of Leuven and enriched by Wikidata information. Most of the information was extracted from https://www.visitleuven.be/oeratoom and Wikimedia. You can find inaccuracies, so we apologize in advance.",
                 "text_feedback": "Please let us know if you want to contribute with your experience, enrich the content, correct inaccuracies, or submit pictures. This app is created by locals and experts.",
-                "feedback_url": "https://espinr.github.io/oeratoom-leuven/oeratoom/#get-involved",
-                "issue_url": "https://github.com/espinr/oeratoom-leuven/issues/new?template=update_request.md&title=Update+Request"
+                "feedback_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/#get-involved",
+                "issue_url": "https://github.com/pbesteu/oeratoom-leuven-quick-app/issues/new?template=update_request.md&title=Update+Request"
             },
             "pois": 
             [
