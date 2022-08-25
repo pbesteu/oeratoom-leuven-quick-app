@@ -1,0 +1,12 @@
+    {
+      "id" : {{jsonize(cells["id"].value)}},
+      "type" : {{jsonize(cells["pretty-years"].value.replace('Age: ', ''))}},
+      "lon" : "{{jsonize(cells["longitude"].value)}}",
+      "lat" : "{{jsonize(cells["latitude"].value)}}",
+      "name" : {{jsonize(cells["name"].value)}},
+      "description" : {{(if(cells["description"].value!=null, jsonize(cells["description"].value), jsonize(cells["name"].value)))}},
+      "images" : [{{ jsonize(cells["image"].value) }}],
+      "attributions": ["Source: visitleuven.be/oeratoom", "Source: Wikimeda, Wikimedia Commons"],
+      "wikidata": {{jsonize(cells["Qid"].value)}}, 
+      "urls": [{{jsonize(cells["catalogue"].value)}},{{jsonize(cells["freebase"].value)}},{{jsonize(cells["loc"].value)}}]
+    }
