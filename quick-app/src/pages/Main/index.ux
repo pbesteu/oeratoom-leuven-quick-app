@@ -1,4 +1,5 @@
 <import name="cards" src="./cards.ux"></import>
+<import name="today" src="./today.ux"></import>
 <import name="mymap" src="./mymap.ux"></import>
 <import name="about" src="./about.ux"></import>
 
@@ -12,9 +13,12 @@
               <cards id="cards-component"></cards>
             </div>
             <div if="{{this.selectedTabIndex === 1}}">
-              <mymap id="map-component"></mymap>
+              <today id="today-component"></today>
             </div>          
             <div if="{{this.selectedTabIndex === 2}}">
+              <mymap id="map-component"></mymap>
+            </div>          
+            <div if="{{this.selectedTabIndex === 3}}">
               <about id="about-component"></about>
             </div>          
           </div>
@@ -61,6 +65,10 @@ export default {
         icon: '\uf03e'
       },
       {
+        title: 'Today',
+        icon: '\ue8df'
+      },      
+      {
         title: 'map',
         icon: '\uf041'
       },
@@ -70,8 +78,8 @@ export default {
       }
     ],
     selectedTabIndex: 0,
-    deactivedColor: '#707780',
-    activedColor: '#000000',
+    deactivedColor: '#909090',
+    activedColor: '#F99B93',
     activeTabIndex: 0,
     channel: null
   },
@@ -106,7 +114,6 @@ export default {
         icon: this.$t(`message.tabs.${i}.icon`)
       }      
     }
-    this.activedColor = appInfo.theme.brand
   },
   /**
    * Waits for a signal to refresh the component
@@ -194,7 +201,7 @@ text {
           font-size: 50px;
         }
         .tab-title {
-          font-size: 20px;
+          font-size: 15px;
         }
       }
     }

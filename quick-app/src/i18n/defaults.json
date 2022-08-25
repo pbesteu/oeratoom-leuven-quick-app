@@ -3,7 +3,7 @@
         "app": {
             "geolocation" : {
                 "request" : "I need geolocation to work",
-                "description": "This app uses your geolocation to show the artworks nearby, nothing else. Please grant it :)",
+                "description": "This app uses your geolocation to show the physical assets nearby, nothing else. Please grant it :)",
                 "no": "No, thanks",
                 "yes": "Yes, I'm okay"
             }
@@ -12,6 +12,10 @@
             {
                 "title": "Cards",
                 "icon": "\ue3b6"
+            },
+            {
+                "title": "Today",
+                "icon": "\ue8df"
             },
             {
                 "title": "Map",
@@ -23,16 +27,21 @@
             }
         ],
         "cards": {
-            "approx_km": "{distance} km from here",
-            "approx_m": "{distance} m from here",
-            "no_items": "No more data"
+            "approx_km": "Medallion at {distance} km from here",
+            "approx_m": "Medallion at {distance} m from here",
+            "no_items": "No more data",
+            "type": "{type} galaxy ",
+            "constellation": "part of the {constellation} constellation",
+            "discoverers": ", discovered by {discoverers} ",
+            "year_discovery": "in {year}",
+            "age": "Universe's age: {age}"
         },
         "main": {
-            "loading": "Loading artworks..."
+            "loading": "Loading galaxies..."
         },
         "detail": {
-            "approx_km": "Approx. at {distance} km from here",
-            "approx_m": "Approx. at {distance} m from here",
+            "approx_km": "Medallion at {distance} km from here",
+            "approx_m": "Medallion at {distance} m from here",
             "acknowledgements": "A big thanks to our contributors:",
             "wikidata": "Wikidata",
             "more_info": "More information:",
@@ -44,7 +53,17 @@
             "buttons": {
                 "share": "Share",
                 "feedback": "Improve it"
-            }
+            },
+            "type": "{type} galaxy",
+            "constellation": "Part of the {constellation} constellation",
+            "discoverers": "Discovered by {discoverers} ",
+            "year_discovery": "in {year}",
+            "loc": "Library of Congress",
+            "freebase": "Freebase",
+            "catalogue": "Principal Galaxies Catalogue",
+            "quora_topic": "Discussion topic in Quora:",
+            "medallion_map": "The medallion on the map:",
+            "age": "Universe's age: {age}"
         },
         "about": {
             "install" : {
@@ -60,12 +79,21 @@
             },
             "acknowledments": "Thanks to:",
             "acks": [
+                "City of Leuven", 
                 "Maps by © OpenStreetMap", 
-                "Default logo based on Kasturi Roy's picture on Unsplash"
+                "Default Galaxy image by Victoruler from NounProject.com"
             ],
             "release": "Content Release:",
             "involved": "Get involved now!",
             "repository": "More details of this project"
+        },
+        "today" : {
+            "intro": "Based your current position, you are:",
+            "after": "after the Big Bang",
+            "billion": "{years} billion years",
+            "million": "{years} million years",
+            "zero": "You are before the Big Bang",
+            "walk": "Walk towards the Central Medallion to travel forwards to today (13.78 billion years after the Big Bang)."
         }
     }
 }

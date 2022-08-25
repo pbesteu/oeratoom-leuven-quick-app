@@ -27,11 +27,11 @@
                 class="images-image"
                 src="{{$item}}"
               ></image>
-              <text if={{item.type}} class="poi-overlay-type">{{item.type}}</text>            
+              <text if={{item.years}} class="poi-overlay-type"> {{$t('message.detail.age', {age: item.years})}}</text>
             </stack>
             <stack else class="poi-image-wrap">
-              <image class="images-image" src="/assets/images/placeholder.jpg"></image>
-              <text if={{item.type}} class="poi-overlay-type">{{item.type}}</text>            
+              <image class="images-image" src="/assets/images/placeholder.png"></image>
+              <text if={{item.years}} class="poi-overlay-type"> {{$t('message.detail.age', {age: item.years})}}</text>
             </stack>
           </swiper>
         </list-item>
@@ -40,7 +40,12 @@
           <text class="item-text-name">{{ item.name }}</text>
           <text class="item-text-distance">{{ prettifyDistance(distance) }}</text>
           <div class="title-line"></div>          
-          <text class="title-text-description">{{ item.description }}</text>
+          <text class="title-text-description">{{$t('message.detail.type', {type: item.type})}}</text>
+          <text class="title-text-description" if={{item.constellation}}>{{$t('message.detail.constellation', {constellation: item.constellation})}}</text>
+          <text class="title-text-description" if={{item.discoverers}}>
+            {{$t('message.detail.discoverers', {discoverers: item.discoverers})}}
+            <span if={{item.discovery}}>{{$t('message.detail.year_discovery', {year: item.discovery})}}</span>
+          </text>
           <text class="title-text-description">{{ item.more }}</text>
         </list-item>
 
@@ -64,13 +69,33 @@
           <text class="list-item" for="{{item.urls}}">
             <a href="{{ $item }}">{{$item}}</a>
           </text>
-          <text class="list-item">
-          <a if="{{ item.wikidata }}" href="https://www.wikidata.org/wiki/{{ item.wikidata }}">
-            {{ $t('message.detail.wikidata') }}
-          </a>
+          <text class="list-item" if="{{ item.wikidata }}" >
+            <a href="https://www.wikidata.org/wiki/{{ item.wikidata }}">
+              {{ $t('message.detail.wikidata') }}
+            </a>
+          </text>
+          <text class="list-item" if="{{ item.loc }}">
+            <a  href="https://id.loc.gov/authorities/{{ item.loc }}">
+              {{ $t('message.detail.loc') }}
+            </a>
+          </text>
+          <text class="list-item" if="{{ item.catalogue }}">
+            <a  href="https://ned.ipac.caltech.edu/cgi-bin/objsearch?extend=yes&objname=PGC+{{ item.catalogue }}">
+              {{ $t('message.detail.catalogue') }}
+            </a>
+          </text>          
+          <text class="list-item" if="{{ item.freebase }}">
+            <a  href="https://www.google.com/search?kgmid={{ item.freebase }}">
+              {{ $t('message.detail.freebase') }}
+            </a>
+          </text>          
+          <text class="list-item" if="{{ item.quora }}">
+            {{ $t('message.detail.quora_topic') }}
+            <a  href="https://www.quora.com/topic/{{ item.quora }}">
+              {{ item.quora }}
+            </a>
           </text>
         </list-item>
-        
         <list-item type="map">
           <stack class="map-container">
             <web src="{{mapUrl}}" @pagefinish={{pagefinish}}></web>
@@ -127,8 +152,6 @@ import webview from '@system.webview'
 export default {
   private: {
     isTop: true,
-    iconLike: '\uf004',
-    iconLikeEmpty: '\uf08a',
     pois: [],
     item: null, 
     loadingMap: true,
@@ -240,8 +263,8 @@ export default {
             background-color: rgba(0, 0, 0, 0.5);
             color: #ffffff;
             font-weight: lighter;
-            height: 6 * @size-factor;
-            font-size: 5 * @size-factor;
+            height: 5 * @size-factor;
+            font-size: 4 * @size-factor;
             align-self: flex-end;
             margin-bottom: 2 * @size-factor;
             padding: 1 * @size-factor;

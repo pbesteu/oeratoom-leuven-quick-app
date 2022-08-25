@@ -10,15 +10,21 @@
         >
           <stack class="poi-image-wrap">
             <image if="{{$item.images.length > 0 }}" src="{{$item.images[0]}}"></image>
-            <image else src="/assets/images/placeholder.jpg"></image>
-            <text if={{$item.type}} class="poi-overlay-type">{{$item.type}}</text>            
+            <image else src="/assets/images/placeholder.png"></image>
+            <text if={{$item.years}} class="poi-overlay-type"> {{$t('message.cards.age', {age: $item.years})}}</text>
           </stack>
           <div class="poi-text-wrap">
             <div class="poi-text-title">
               <text class="poi-text-name">{{ $item.name }}</text>
               <text class="poi-text-distance">{{ prettifyDistance($item.distance) }}</text>
             </div>
-            <text class="poi-text-description">{{ $item.description }}</text>
+            <text class="poi-text-description">
+              <span>{{$t('message.cards.type', {type: $item.type})}}</span>
+              <span if={{$item.constellation}}>{{$t('message.cards.constellation', {constellation: $item.constellation})}}</span>
+              <span if={{$item.discoverers}}>{{$t('message.cards.discoverers', {discoverers: $item.discoverers})}}
+                <span if={{$item.discovery}}>{{$t('message.cards.year_discovery', {year: $item.discovery})}}</span>
+              </span>
+            </text>
           </div>
         </list-item>
 
