@@ -14,7 +14,7 @@
       "freebase" : {{jsonize(cells["Freebase ID"].value)}},
       "catalogue" : {{jsonize(cells["Principal Galaxies Catalogue ID"].value)}},
       "quora" : {{jsonize(cells["Quora topic ID"].value)}},
-      "more" : {{jsonize(cells["more"].value)}},
+      "more" : "",
       "images" : [{{ if(cells["image"].value!=null, jsonize(cells["image"].value), '') }}],
       "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
       "wikidata": {{jsonize(cells["Qid"].value)}}, 
