@@ -1,8 +1,10 @@
-# Local Cultural Heritage Quick App - Your City
+# Oeratoom (Primeval Atom) - Big Bang in Leuven
 
-__Change this text according to your needs__
+> Explore the Big Bang Theory through the heart of Leuven 
 
-The Local Cultural Heritage Quick App promotes cultural heritage collections in small and medium cities through open data and crowdsourcing. 
+The Oeratoom - Big Bang in Leuven is a Quick App that promotes the urban artwork in Leuven in tribute to Georges Lemaître, the father of the Big Bang Theory and the founder of modern cosmology. Lemaître studied physics and mathematics in Leuven, followed by theology. In 1931, Lemaître introduced the revolutionary Big Bang Theory at the university of Leuven. 
+
+This application has been created to complement the great artwork, promoted by KU[N]ST Leuven. The artwork was performed by the artist Félicie d’Estienne d’Orves. She transforms scientific knowledge into poetic images that make us ponder our place in the universe. This application wants to help visitors understand this master piece.
 
 > It's free, open-source and collaborative 
 
@@ -13,26 +15,26 @@ Some screenshots:
 
 ## Privacy
 
-These apps are based on open data and automatic processing of the data. The community's content is enriched and curated, so it's available to anyone who wants to get involved. Local experts are welcome to refine the definitions, names, and pictures and add new points of interest to the app.
+This app is based on open data (mainly Wikidata) and automatic processing of the data. The community's content is enriched and curated, so it's available to anyone who wants to get involved. Local experts are welcome to refine the definitions, names, and pictures.
 
-The app doesn't collect any personal data, so relax. We won't sell anything.
+We care for your privacy. The app doesn't collect any personal data, so relax.
 
-Perhaps the content is inaccurate, so please [let us know](https://github.com/espinr/local-cultural-heritage/issues/new) if you've spotted anything that might be enhanced. 
+Perhaps the content is inaccurate, so please [let us know](https://github.com/pbesteu/oeratoom-leuven-quick-app/issues/new) if you've spotted anything that might be enhanced. 
 
 ## Get involved
 
 > Do you want to contribute to the content?
 
-The content for each application instance (one per city/town) is stored in a particular directory in this repository, so you can look at the existing information.
+The content is stored in this repository, so you can look at the existing information.
 
-Every project has two resource types:
+There are two resource types:
 
 - *images* (`./images/xxxxx.jpg`): light pictures in square format. If possible 1x1 ratio for homogenous look and feel; the lighter the better (50Kb per image would be fine).
 - *database* (`./data.json`): JSON file with the app's configuration (name, colors, privacy texts, etc.) and the points of interest you want to show in the app. 
 
-You can download it in your computer, modify the texts, or add a new element based on your knowledge. You can upload it directly (better a Pull Request if you are familiar with GitHub), or [raise an issue](https://github.com/espinr/local-cultural-heritage/issues/new) to suggest the changes (please be explicit).
+You can download it in your computer, modify the texts, or add a new element based on your knowledge. You can upload it directly (better a Pull Request if you are familiar with GitHub), or [raise an issue](https://github.com/pbesteu/oeratoom-leuven-quick-app/issues/new) to suggest the changes (please be explicit).
 
-Note that there is a moderation process, so it may take some hours. Please, leave a note with the suggestion, so the editor may validate and confirm your changes.
+Note that there is a moderation process (just to avoid spam), so it may take some hours. Please, leave a note with the suggestion, so the editor may validate and confirm your changes.
 
 ### How to submit new images
 
@@ -47,9 +49,9 @@ Please, use the identifier of the point of interest you are referring to (see at
 
 ### How to update the database?
 
-The database is in a JSON file named `data.json` in the root directory of the project. In `sample/data.json` you have an empty file you can use to start the project.
+The database is in a JSON file named `data.json` in the root directory of the project. 
 
-Please be sure that this document has the correct format (syntax and content). You can test it using any JSON schema validation tool against the JSON schema you can find in the repository ([schema.json](https://espinr.github.io/local-cultural-heritage/schema.json)). 
+Please be sure that this document has the correct format (syntax and content). You can test it using any JSON schema validation tool against the JSON schema you can find in the repository ([schema.json](https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/schema.json)). 
 
 This JSON document contains two main parts, represented by the main keys of the root object:
 
@@ -66,7 +68,7 @@ Example of a project named `fr/paris` for the City of Paris:
         "app_title": "Paris Street Heritage",
         "version": 1,
         "updated": "2022-03-26",
-        "source_url": "https://espinr.github.io/local-cultural-heritage/fr/paris/data.json",
+        "source_url": "https://pbesteu.github.io/local-cultural-heritage/fr/paris/data.json",
         "analytics_id": "10",
         "marketplace_url": "https://appgallery.huawei.com/app/FinalURL"
     },
@@ -130,36 +132,38 @@ The content language tags are objects with the following structure:
         "en": {
             "app": {
                 "theme": {
-                    "brand": "#B11623",             // Main color of the theme
-                    "complementary": "#FAFAFA"      // Secondary color of the theme
+                    "brand": "#37423C",
+                    "complementary": "#F99B93"
                 },
-                "repository_url": "https://github.com/espinr/local-cultural-heritage/tree/main/docs/fr/paris",
-                "text_info": "This project was created by...",
-                "text_acknowledge": "We would like to thanks...",
-                "text_feedback": "Please let us know if you want to contribute...",
-                "feedback_url": "https://espinr.github.io/local-cultural-heritage/fr/paris/#contributors",
-                "issue_url": "https://github.com/espinr/local-cultural-heritage/issues/new?labels=fr/paris"
+                "repository_url": "https://github.com/pbesteu/oeratoom-leuven-quick-app/tree/main/docs/oeratoom/",
+                "text_info": "In Leuven... Discover many interesting facts about the work of art and the universe while walking.",
+                "text_acknowledge": "This quick app is an open-source project powered by open data from the City of Leuven and enriched by Wikidata information. Most of the information was extracted from https://www.visitleuven.be/oeratoom and Wikimedia. You can find inaccuracies, so we apologize in advance.",
+                "text_feedback": "Please let us know if you want to contribute with your experience, enrich the content, correct inaccuracies, or submit pictures. This app is created by locals and experts.",
+                "feedback_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/#get-involved",
+                "issue_url": "https://github.com/pbesteu/oeratoom-leuven-quick-app/issues/new?template=update_request.md&title=Update+Request"
             },
             "pois": [
                 {
-                    "id": "eiffeltower",
-                    "lat": "48.865157817905896",
-                    "lon": "2.2938185078918156",
-                    "type": "tower",
-                    "name": "Eiffel Tower",
-                    "images": [
-                        "https://espinr.github.io/local-cultural-heritage/fr/paris/images/eiffeltower_1.jpg",
-                        "https://espinr.github.io/local-cultural-heritage/fr/paris/images/eiffeltower_2.jpg"
-                    ],
-                    "description": "The Tour Eiffel (French) is a iron lattice tower, named after the engineer Gustave Eiffel, whose company designed and built the tower",
-                    "more": "Locally nicknamed La dame de fer (French for Iron Lady), it was constructed from 1887 to 1889 as the centerpiece of the 1889 World's Fair and was initially criticized by some of France's leading artists and intellectuals for its design, but it has become a global cultural icon of France and one of the most recognizable structures in the world",
-                    "attributions": [
-                        "John Smith", 
-                        "Jane Doe"
-                    ], 
-                    "urls": [
-                        "https://en.wikipedia.org/wiki/Eiffel_Tower"
-                    ]
+                "id" : "Q2469",
+                "type" : "Spiral",
+                "lon" : "4.7024098",
+                "lat" : "50.8791264",
+                "name" : "M31 - ANDROMEDA GALAXY",
+                "constellation" : "Andromeda",
+                "years" : "13.78 billion years",
+                "description" : "Age: 13.78 billion years. Galaxy in the constellation of Andromeda",
+                "discoverers" : null,
+                "discovery" : "0964",
+                "radius" : 10000000000000,
+                "loc" : "sh85004924",
+                "freebase" : "/m/0jvb4",
+                "catalogue" : "2557",
+                "quora" : "Andromeda-Galaxy-3",
+                "more" : "",
+                "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Andromeda_Galaxy_560mm_FL.jpg/600px-Andromeda_Galaxy_560mm_FL.jpg"],
+                "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
+                "wikidata": "Q2469", 
+                "urls": []
                 },
                 {
                     // Other PoI...
@@ -214,7 +218,7 @@ For instance,
 ``` json
 {
     //...
-    "issue_url": "https://github.com/espinr/local-cultural-heritage/issues/new?labels=sample&template=update_request.md&title=Update+request+of+"
+    "issue_url": "https://github.com/pbesteu/oeratoom-leuven-quick-app/issues/new?labels=sample&template=update_request.md&title=Update+request+of+"
     //...
 }
 ```
@@ -228,5 +232,5 @@ Note that the application will append the name of the point of interest at the e
 
 Just fork the repository and start sending your contributions. The code of the quick app is in the [`/quick-app`](../quick-app) folder of the repository. 
 
-Feel free to [raise issues](https://github.com/espinr/local-cultural-heritage/issues/new) on the code.
+Feel free to [raise issues](https://github.com/pbesteu/oeratoom-leuven-quick-app/issues/new) on the code.
 
