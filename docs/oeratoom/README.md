@@ -65,12 +65,12 @@ Example of a project named `fr/paris` for the City of Paris:
 ``` json
 {
     "meta": {
-        "app_title": "Paris Street Heritage",
-        "version": 1,
-        "updated": "2022-03-26",
-        "source_url": "https://pbesteu.github.io/local-cultural-heritage/fr/paris/data.json",
-        "analytics_id": "10",
-        "marketplace_url": "https://appgallery.huawei.com/app/FinalURL"
+        "app_title": "Oeratoom Leuven",
+        "version": 3,
+        "updated": "2022-08-26",
+        "source_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/data.json",
+        "analytics_id": "1",
+        "marketplace_url": ""
     },
     "content": {
         "en": {},
