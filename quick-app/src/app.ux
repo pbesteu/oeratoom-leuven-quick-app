@@ -35,6 +35,7 @@ export default {
       pois: [].concat(data.content[this.locale].pois),
       myCoordinates: { lat: 0, lon: 0},   // user's coordinates
       globalMapURL: mapBaseUrl, 
+      splashScreenSeen: false,
       userId: cipher.getRandomValues(8)
     }
     this.channel = new BroadcastChannel('updateChannel')

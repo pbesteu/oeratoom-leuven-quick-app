@@ -50,6 +50,25 @@
         <progress type="circular" class="circular-progress"></progress>
       </div>
     </div>
+    <div id="page-splash-info" if={{!splashScreenSeen}}>
+      <div class="header">
+        <text class="title">{{$t('message.intro.title')}}</text>
+        <text class="info">{{$t('message.intro.help')}}</text>
+        <text class="info">{{$t('message.intro.help2')}}</text>
+      </div>
+      <image src="{{$t('message.intro.img')}}"></image>
+      <div class="footer">
+        <text class="info">{{$t('message.intro.aware')}}</text>
+      </div>
+      <div class="button-container">
+        <input
+          class="button"
+          type="button"
+          value="{{$t('message.intro.button')}}"
+          @click="closeSplashScreen"
+        />
+      </div>
+    </div>
   </stack>    
 </template>
 
@@ -86,7 +105,11 @@ export default {
   public: {
     appName: '',
     loadingMessage: '',
-    loading: true
+    loading: true,
+    splashScreenSeen: false,
+  },
+  onCreate() {
+    this.splashScreenSeen = this.$app.getAppData('splashScreenSeen')
   },
   onInit() {
     this.initTabs() 
@@ -174,7 +197,11 @@ export default {
     this.$app.setAppData('pois', pois)
     console.info(`   ✔️ ${pois.length} PoIs reordered`)
     return pois.length
-  }  
+  },
+  closeSplashScreen() {
+    this.$app.setAppData('splashScreenSeen', true)
+    this.splashScreenSeen = true
+  }
 }
 </script>
 
@@ -219,6 +246,56 @@ text {
     .version, .info {
       font-size: 20px; 
     }
-  }   
+  }
+  #page-splash-info {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    image {
+      width: 100%;
+    }
+    .header {
+      flex-direction: column;
+      background-color: #000000;
+      padding-left: 40px;
+      padding-right: 40px;
+      text {
+        width: 100%;
+      }
+      .title {
+        font-size: 45px;
+        color: @brand;
+        font-weight: bolder;
+      }
+      .info {
+        margin-top: 20px;
+        font-size: 25px;
+        color: white;
+        text-align: left;
+      }
+    }
+    .footer {
+      background-color: #000000;
+      padding-left: 40px;
+      padding-right: 40px;
+      .info {
+        font-size: 25px;
+        color: white;
+        text-align: left;
+      }
+    }
+    .button-container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      .button {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }          
+  }
 }
 </style>
