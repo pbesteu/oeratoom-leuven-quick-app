@@ -6,6 +6,11 @@ The Local Cultural Heritage Quick App promotes cultural heritage collections in 
 
 > It's free, open-source and collaborative 
 
+Some screenshots:
+
+<img src="https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/screenshots_s.png" alt="Screenshots of the application" width="100%">
+
+
 ## Privacy
 
 These apps are based on open data and automatic processing of the data. The community's content is enriched and curated, so it's available to anyone who wants to get involved. Local experts are welcome to refine the definitions, names, and pictures and add new points of interest to the app.
