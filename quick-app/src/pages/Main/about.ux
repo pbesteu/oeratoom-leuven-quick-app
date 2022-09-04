@@ -1,27 +1,19 @@
 <template>
   <div class="page-container">
-    <div class="install-button">
-      <div class="help">
-        <text>{{ $t('message.about.install.title') }}</text>
-        <text>{{ $t('message.about.install.description') }}</text>
-      </div>
-      <div class="bottom-wrap">
-        <div class="buttons-wrap">
-          <input
-            class="button"
-            type="button"
-            value="{{$t('message.about.install.button')}}"
-            @click="createShortcut"
-          />
-        </div>
-      </div>
-    </div>
     <div class="app-info">
       <image src="/assets/images/logo.png"></image>
       <text>{{nameApp}}</text>
       <text class="release">
         {{ $t('message.about.release') }}
         v{{contentVersion}}</text>
+      <div class="buttons-wrap">
+        <input
+          class="button"
+          type="button"
+          value="{{$t('message.about.install.button')}}"
+          @click="createShortcut"
+        />
+      </div>
     </div>    
     <div class="app-legal">
       <text>{{infoText}}</text>
@@ -110,6 +102,7 @@ export default {
 .app-legal {
   flex-direction: column;
   padding: 4 * @size-factor;
+  padding-top: 0;
   text {
     margin-bottom: 4 * @size-factor;
   }
@@ -122,25 +115,15 @@ export default {
   }
 }
 .release {
-  font-size: 20px;
+  font-size: 2 * @size-factor;
 }
-.bottom-wrap {
+.buttons-wrap {
   width: 100%;
   flex-direction: row;
-  padding: 32px;
+  padding: 3.2 * @size-factor;
   justify-content: center;
-}
-.install-button {   
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 2 * @size-factor;    
-  .help {
-    flex-direction: column;
-    text {
-      width: 70%;
-    }
+  .button {
+    font-size: 3 * @size-factor;
   }
-} 
+}
 </style>
