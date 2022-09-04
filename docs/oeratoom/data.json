@@ -260,7 +260,7 @@
               "catalogue" : "5663",
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/NGC_0584SST.jpg/600px-NGC_0584SST.jpg","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med33.jpg",],
+              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/NGC_0584SST.jpg/600px-NGC_0584SST.jpg","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med33.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q852522", 
               "urls": []
@@ -502,7 +502,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/HDFSJ223248.47-603204.2.png", "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med18.jpg",],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/HDFSJ223248.47-603204.2.png", "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med18.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q76314568", 
               "urls": []
@@ -1096,7 +1096,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med5.jpg",],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med5.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
@@ -1162,7 +1162,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/NGC_2699_DSS.jpg/600px-NGC_2699_DSS.jpg","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med15.jpg",],
+              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/NGC_2699_DSS.jpg/600px-NGC_2699_DSS.jpg","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med15.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q746922", 
               "urls": []
@@ -1184,7 +1184,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med20.jpg",],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med20.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q75388181", 
               "urls": []
@@ -1294,7 +1294,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med52.jpg",],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med52.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
@@ -1361,7 +1361,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med50.jpg",],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med50.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
@@ -1383,7 +1383,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med7.jpg",],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med7.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
