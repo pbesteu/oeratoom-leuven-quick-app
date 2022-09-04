@@ -1,8 +1,8 @@
 {
   "meta": {
       "app_title": "Oeratoom Leuven",
-      "version": 3,
-      "updated": "2022-08-26",
+      "version": 4,
+      "updated": "2022-09-04",
       "source_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/data.json",
       "analytics_id": "1",
       "marketplace_url": ""
@@ -656,7 +656,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sculptor_constellation_map.svg/600px-Sculptor_constellation_map.svg.png"],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med56.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sculptor_constellation_map.svg/600px-Sculptor_constellation_map.svg.png"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q88528871", 
               "urls": []
@@ -810,7 +810,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/GMASS2550.png"],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/GMASS2550.png","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med63.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
@@ -876,7 +876,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Aquarius_constellation_map.png/676px-Aquarius_constellation_map.png"],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med57.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Aquarius_constellation_map.png/676px-Aquarius_constellation_map.png"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q86559073", 
               "urls": []
@@ -1427,7 +1427,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/MACS0647-JD.JPG/600px-MACS0647-JD.JPG"],
+              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/MACS0647-JD.JPG/600px-MACS0647-JD.JPG","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med60.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q73688", 
               "urls": []
@@ -1493,7 +1493,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/UrsaMajorCC.jpg/600px-UrsaMajorCC.jpg"],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med58.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/UrsaMajorCC.jpg/600px-UrsaMajorCC.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q88651478", 
               "urls": []
@@ -1603,7 +1603,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : [],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/med61.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
