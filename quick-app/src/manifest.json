@@ -1,8 +1,8 @@
 {
     "package": "es.espinr.oeratoom",
     "name": "Oeratoom Leuven",
-    "versionName": "0.1",
-    "versionCode": 1,
+    "versionName": "0.2",
+    "versionCode": 2,
     "minPlatformVersion": 1078,
     "icon": "/assets/images/logo.png",
     "features": [
