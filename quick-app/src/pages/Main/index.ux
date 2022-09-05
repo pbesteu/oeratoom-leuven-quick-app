@@ -57,9 +57,6 @@
         <text class="info">{{$t('message.intro.help2')}}</text>
       </div>
       <image src="{{$t('message.intro.img')}}"></image>
-      <div class="footer">
-        <text class="info">{{$t('message.intro.aware')}}</text>
-      </div>
       <div class="button-container">
         <input
           class="button"
@@ -67,6 +64,9 @@
           value="{{$t('message.intro.button')}}"
           @click="closeSplashScreen"
         />
+      </div>
+      <div class="footer">
+        <text class="info">{{$t('message.intro.aware')}}</text>
       </div>
     </div>
   </stack>    
