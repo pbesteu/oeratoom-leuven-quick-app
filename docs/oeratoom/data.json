@@ -1,8 +1,8 @@
 {
   "meta": {
       "app_title": "Oeratoom Leuven",
-      "version": 4,
-      "updated": "2022-09-04",
+      "version": 5,
+      "updated": "2022-09-14",
       "source_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/data.json",
       "analytics_id": "1",
       "marketplace_url": ""
@@ -392,7 +392,7 @@
               "catalogue" : "44715",
               "quora" : null,
               "more" : "",
-              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ssc2007-10a1.jpg/600px-Ssc2007-10a1.jpg"],
+              "images" : ["https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ssc2007-10a1.jpg/600px-Ssc2007-10a1.jpg","https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/Q754715.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": "Q754715", 
               "urls": []
@@ -986,7 +986,7 @@
               "catalogue" : null,
               "quora" : null,
               "more" : "",
-              "images" : [],
+              "images" : ["https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/images/cowie139.jpg"],
               "attributions": ["Source: visitleuven.be/oeratoom", "Wikimeda, Wikimedia Commons", "Caltech or AAO/ROE" ],
               "wikidata": null, 
               "urls": []
