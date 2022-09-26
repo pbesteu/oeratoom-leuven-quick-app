@@ -1,8 +1,9 @@
 {
   "meta": {
+      "app_id": "es.espinr.oeratoom",
       "app_title": "Oeratoom Leuven",
-      "version": 5,
-      "updated": "2022-09-14",
+      "version": 6,
+      "updated": "2022-09-26",
       "source_url": "https://pbest.eu/oeratoom-leuven-quick-app/oeratoom/data.json",
       "analytics_id": "1",
       "marketplace_url": ""
